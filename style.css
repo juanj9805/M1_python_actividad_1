@@ -1,0 +1,125 @@
+:root {
+  /* Colors */
+  --color-first: #050505;
+  --color-second: #545454;
+
+  /* Typography */
+  --heading-font: "Inknut Antiqua", serif;
+  --body-font: "Open Sans", sans-serif;
+
+  /* Font Size */
+  --font-size-xs: 0.875rem;
+  --font-size-sm: 1rem;
+  --font-size-md: 1.25rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 3rem;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Layouts */
+  --standard-border-radius: var(--spacing-sm);
+  --max-width: 80rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.margin {
+  max-width: var(--max-width);
+}
+
+.header h1 {
+  font-size: calc(var(--font-size-xl));
+  color: var(--color-first);
+  margin: 0 0 var(--spacing-lg) 0;
+}
+
+.header h2 {
+  color: var(--color-second);
+}
+
+.div-contact-information {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) 0;
+}
+
+.contact-information {
+  margin: 0 var(--spacing-lg) 0 0;
+}
+
+.contact-information a {
+  text-decoration: none;
+  color: var(--color-first);
+}
+
+.professional-perfil-section h3 {
+  border-bottom: 2px solid var(--color-second);
+  margin: var(--font-size-md) 0;
+}
+
+.professional-perfil-section {
+  margin: var(--font-size-md) 0;
+}
+
+.professional-experience-section > h3 {
+  border-bottom: 2px solid var(--color-second);
+  margin: var(--font-size-md) 0;
+}
+
+.professional-experience-section {
+  margin: var(--font-size-md) 0;
+}
+
+.professional-experience {
+  margin: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) 0;
+}
+
+.education-section {
+  margin: var(--font-size-md) 0;
+}
+
+.education-section > h3 {
+  border-bottom: 2px solid var(--color-second);
+}
+
+.education {
+  margin: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) 0;
+}
+
+.complementary-education-section > h3 {
+  border-bottom: 2px solid var(--color-second);
+}
+
+.grid-complementary-education {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) 0;
+}
+
+.language-section > h3 {
+  border-bottom: 2px solid var(--color-second);
+}
+
+.language {
+  margin: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) 0;
+}
